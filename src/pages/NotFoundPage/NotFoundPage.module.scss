@@ -1,0 +1,19 @@
+@use "../../components/shared/mixins" as *;
+@use "../../components/shared/variables" as *;
+
+.title {
+  color: $btn-red;
+  font-size: 24px;
+  text-align: center;
+  @include for-tablet {
+    font-size: 35px;
+  }
+}
+.text {
+  color: $btn-red;
+  font-size: 25px;
+  text-align: center;
+}
+.container {
+  margin-top: 150px;
+}

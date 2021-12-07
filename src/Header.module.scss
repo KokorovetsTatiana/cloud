@@ -1,0 +1,84 @@
+@use "../src/components/shared/mixins" as *;
+@use "../src/components/shared/variables" as *;
+
+a {
+  text-decoration: none;
+  color: $white-color;
+}
+
+.header {
+  background-color: blue; // delete later
+  font-family: $logo-font;
+  padding-left: 145px;
+  padding-right: 145px;
+  padding-top: 63px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarBrand {
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.11;
+}
+
+.navbarPages {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLinks {
+  margin-right: 116px;
+}
+
+.navItem {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.12;
+}
+
+.navItem:not(:last-child) {
+  margin-right: 70px;
+}
+
+.navbarButtons {
+  display: flex;
+}
+
+.navItemBtn {
+  display: flex;
+  width: 132px;
+  height: 36px;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $white-color;
+  color: $violet-text;
+  font-family: $login-font;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.19;
+
+  transition-timing-function: $timing;
+  transition-duration: $duration;
+}
+
+.navItemBtn:first-child {
+  margin-right: 30px;
+}
+
+.navItemBtn:hover,
+.navItemBtn:focus {
+  background-color: transparent;
+  color: $white-color;
+
+  transition-timing-function: $timing;
+  transition-duration: $duration;
+}
