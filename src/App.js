@@ -14,13 +14,13 @@ import NotFoundPage from '../src/pages/NotFoundPage/NotFoundPage';
 
 function App() {
   return (
-    <div className={styles.header}>
+    <div className={styles.mainContainer}>
       <Navbar className={styles.navbar}>
-         <Navbar.Brand className={styles.navbarBrand} href="/home">
+         {/* <Navbar.Brand className={styles.navbarBrand} href="/home">
            SKYBOX
-         </Navbar.Brand>
+         </Navbar.Brand> */}
          <Navbar.Collapse className={styles.navbarPages}>
-          <Nav className={styles.navbarLinks}>
+          {/* <Nav className={styles.navbarLinks}>
             <Nav.Link className={styles.navItem} href="/home">
                Home
              </Nav.Link>
@@ -30,15 +30,15 @@ function App() {
              <Nav.Link className={styles.navItem} href="/contacts">
                Contacts
              </Nav.Link>
-          </Nav>
-          <Nav className={styles.navbarButtons}>
+          </Nav> */}
+          {/* <Nav className={styles.navbarButtons}>
             <Nav.Link className={styles.navItemBtn} href="/login">
                LOGIN
              </Nav.Link>
              <Nav.Link className={styles.navItemBtn} href="/signup">
                SIGN UP
              </Nav.Link>
-          </Nav>
+          </Nav> */}
          </Navbar.Collapse>
        </Navbar>
 

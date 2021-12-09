@@ -1,17 +1,16 @@
-@use "../mixins" as *;
-@use "../variables" as *;
+@use "../shared/mixins" as *;
+@use "../shared/variables" as *;
 
 .footer {
   text-align: center;
-  background-image: url(../../../assets/footer-mobile.svg);
+  background-image: url(../../assets/footer-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 43px;
   background-position-y: -450px;
 
   @include for-desktop {
-    background-image: url(../../../assets/footer-main-pic.svg);
-    background-position-y: 0px;
+    background-image: url(../../assets/footer-main-pic.svg);
   }
 }
 
@@ -28,9 +27,8 @@
 }
 
 .footerSlick {
-  display: flex;
-}
-
-.footerItem:not(:last-child) {
-  margin-right: 167px;
+  @include for-desktop {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }

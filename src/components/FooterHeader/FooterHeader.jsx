@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './FooterHeader.module.scss';
 
-function FooterHeader() {
+const FooterHeader = ({text}) => {
   return (
-    <h4 className={styles.footerheader}>
-      
+    <h4 className={styles.footerHeader}>
+      {text}
     </h4>
   );
 }

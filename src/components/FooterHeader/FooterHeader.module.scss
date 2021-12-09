@@ -1,0 +1,22 @@
+@use "../../../src/components/shared/mixins" as *;
+@use "../../../src/components/shared/variables" as *;
+
+.footerHeader {
+  display: inline-block;
+  color: $white-color;
+  font-family: $logo-font;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.115;
+  margin: 0 0 20px 0;
+
+  @include for-tablet {
+    font-size: 38px;
+  }
+
+  @include for-desktop {
+    margin: 0 0 70px 0;
+    font-size: 48px;
+  }
+}

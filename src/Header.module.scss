@@ -6,16 +6,16 @@ a {
   color: $white-color;
 }
 
-.header {
-  background-color: blue; // delete later
+.mainContainer {
+  // background-color: blue; // delete later
   font-family: $logo-font;
-  padding-left: 145px;
-  padding-right: 145px;
   padding-top: 63px;
 }
 
 .navbar {
   display: flex;
+  padding-left: 145px;
+  padding-right: 145px;
   align-items: center;
   justify-content: space-between;
 }

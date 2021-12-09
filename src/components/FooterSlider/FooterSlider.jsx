@@ -1,29 +1,29 @@
 import {React, Component} from 'react';
 import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
 
-import styles from './Footer.module.scss';
-import FooterHeader from '../../FooterHeader/FooterHeader';
-import FooterParagraph from '../../FooterParagraph/FooterParagraph';
-import FooterSlider from '../../FooterSlider/FooterSlider';
-import { Mobile, Tablet } from '../../../utils/mediaQuery';
 
-export default class Footer extends Component {
+import styles from './FooterSlider.module.scss';
+import FooterHeader from '../FooterHeader/FooterHeader';
+import FooterParagraph from '../FooterParagraph/FooterParagraph';
+
+export default class FooterSlider extends Component {
   render() {
+      const settings = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true
+    };
     return (
-    <section className={styles.footer}>
-    <Mobile>
-        <div className={styles.footerSliderCont}>
-          <FooterSlider />
-        </div>
-    </Mobile>
-    
-    <Tablet>
-      <ul className={styles.footerSlick }>
-        <li className={styles.footerItem}>
+    <Slider {...settings} className={styles.footerSlick}>
+        <div>
           <FooterHeader text={'About us'} />
           <FooterParagraph text={'When using the SKYBOX Services You may transmit, store and or share certain data, information, files, etc. (altogether “Service Data”). For the avoidance of doubt, You retain full ownership of Your Service Data. SKYBOX doea that You or any other uss while using the Service. SKYBOX agrees that these Terms do not grant'}/>
-        </li>
-        <li className={styles.footerItem}>
+        </div>
+        <div>
           <FooterHeader text={'Featured links'} />
           <ul>
             <li>
@@ -45,8 +45,8 @@ export default class Footer extends Component {
               <Link><FooterParagraph text={'Terms of Service'}/></Link>
             </li>
           </ul>
-        </li>
-        <li className={styles.footerItem}>
+        </div>
+        <div>
           <FooterHeader text={'Contact us'} />
           <ul>
             <li>
@@ -68,11 +68,8 @@ export default class Footer extends Component {
               <Link><FooterParagraph text={'Email: mail@example.com'}/></Link>
             </li>
           </ul>
-        </li>
-      </ul>
-    </Tablet>
-    <FooterParagraph text={'Copyright © 2016 - 2021 - SkyBox - Online File Storage'} />
-    </section>
+            </div>
+        </Slider>
   );
 }
 }
