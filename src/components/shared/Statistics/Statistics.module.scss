@@ -1,0 +1,49 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.stat {
+  text-align: center;
+  padding-bottom: 43px;
+  padding-top: 50px;
+
+  @include for-tablet {
+    background: url(../../../assets/footer-left-pic.svg) no-repeat -10px center,
+      url(../../../assets/footer-right-pic.svg) no-repeat right center;
+  }
+}
+
+.itemsList {
+  @include for-desktop {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.statItem {
+  flex-basis: 50%;
+}
+
+.statItem:first-child {
+  margin-bottom: 63px;
+
+  @include for-desktop {
+    margin-bottom: 0;
+    // margin-right: 6px;
+  }
+}
+
+.iconQuantity {
+  background: url(../../../assets/icon-loadings.svg) no-repeat;
+  width: 106px;
+  height: 106px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}
+
+.iconAdd {
+  background: url(../../../assets/icon-add-user.svg) no-repeat center;
+  width: 106px;
+  height: 106px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+}

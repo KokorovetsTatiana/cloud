@@ -1,0 +1,18 @@
+@use "../shared/mixins" as *;
+@use "../shared/variables" as *;
+
+.statText {
+  font-family: $logo-font;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.115;
+  color: $light-blue-text;
+  padding: 0;
+  margin: 0;
+
+  @include for-tablet {
+    font-weight: 700;
+    font-size: 24px;
+  }
+}

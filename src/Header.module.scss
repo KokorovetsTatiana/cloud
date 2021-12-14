@@ -9,15 +9,23 @@ a {
 .mainContainer {
   // background-color: blue; // delete later
   font-family: $logo-font;
+  // background-image: url(../src/assets/bg-header-desktop.svg);
   padding-top: 63px;
+  background-color: transparent;
 }
 
 .navbar {
   display: flex;
-  padding-left: 145px;
-  padding-right: 145px;
+  padding-left: 45px;
+  padding-right: 45px;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
+
+  @include for-desktop {
+    padding-left: 145px;
+    padding-right: 145px;
+  }
 }
 
 .navbarBrand {
@@ -25,26 +33,50 @@ a {
   font-weight: 700;
   font-style: normal;
   line-height: 1.11;
+
+  @include for-tablet {
+    font-style: normal;
+    line-height: 1.11;
+    margin-right: 30px;
+  }
 }
 
 .navbarPages {
-  display: flex;
-  align-items: center;
+  display: none;
+
+  @include for-tablet {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navbarLinks {
-  margin-right: 116px;
+  display: flex;
+  margin-right: 30px;
+
+  @include for-desktop {
+    margin-right: 116px;
+  }
 }
 
 .navItem {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
   font-style: normal;
   line-height: 1.12;
+
+  @include for-desktop {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 
 .navItem:not(:last-child) {
-  margin-right: 70px;
+  margin-right: 15px;
+
+  @include for-desktop {
+    margin-right: 70px;
+  }
 }
 
 .navbarButtons {
@@ -53,7 +85,7 @@ a {
 
 .navItemBtn {
   display: flex;
-  width: 132px;
+  width: 102px;
   height: 36px;
   border-radius: 25px;
   justify-content: center;
@@ -68,6 +100,10 @@ a {
 
   transition-timing-function: $timing;
   transition-duration: $duration;
+
+  @include for-desktop {
+    width: 132px;
+  }
 }
 
 .navItemBtn:first-child {

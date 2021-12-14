@@ -7,9 +7,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 43px;
-  background-position-y: -450px;
+  padding-top: 150px;
 
-  @include for-desktop {
+  @include for-tablet {
     background-image: url(../../assets/footer-main-pic.svg);
   }
 }
@@ -27,6 +27,8 @@
 }
 
 .footerSlick {
+  padding-top: 150px;
+
   @include for-desktop {
     display: flex;
     flex-wrap: nowrap;

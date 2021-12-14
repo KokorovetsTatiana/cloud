@@ -1,0 +1,14 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.secHeading {
+  margin-bottom: 23px;
+
+  font-family: $main-font;
+  font-weight: 300;
+  font-size: 72px;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 28.5;
+  color: $page-heading-text;
+}

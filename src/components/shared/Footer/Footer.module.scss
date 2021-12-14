@@ -7,9 +7,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 43px;
-  background-position-y: -450px;
+  padding-top: 50px;
 
-  @include for-desktop {
+  @include for-tablet {
     background-image: url(../../../assets/footer-main-pic.svg);
     background-position-y: 0px;
   }
@@ -29,8 +29,13 @@
 
 .footerSlick {
   display: flex;
+  margin: 0 auto;
+  border-bottom: $white-color solid 2px;
+  padding-top: 420px;
+  padding-bottom: 79px;
+  margin-bottom: 65px;
 }
 
-.footerItem:not(:last-child) {
-  margin-right: 167px;
+.footerItem {
+  flex-basis: 30%;
 }

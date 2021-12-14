@@ -5,19 +5,19 @@ import styles from './Footer.module.scss';
 import FooterHeader from '../../FooterHeader/FooterHeader';
 import FooterParagraph from '../../FooterParagraph/FooterParagraph';
 import FooterSlider from '../../FooterSlider/FooterSlider';
-import { Mobile, Tablet } from '../../../utils/mediaQuery';
+import { Tablet, Desktop } from '../../../utils/mediaQuery';
 
 export default class Footer extends Component {
   render() {
     return (
-    <section className={styles.footer}>
-    <Mobile>
-        <div className={styles.footerSliderCont}>
-          <FooterSlider />
-        </div>
-    </Mobile>
-    
+    <section className={styles.footer}> 
     <Tablet>
+      <div className={styles.footerSliderCont}>
+        <FooterSlider />
+      </div>
+    </Tablet>
+        
+    <Desktop>
       <ul className={styles.footerSlick }>
         <li className={styles.footerItem}>
           <FooterHeader text={'About us'} />
@@ -70,7 +70,7 @@ export default class Footer extends Component {
           </ul>
         </li>
       </ul>
-    </Tablet>
+    </Desktop>
     <FooterParagraph text={'Copyright © 2016 - 2021 - SkyBox - Online File Storage'} />
     </section>
   );

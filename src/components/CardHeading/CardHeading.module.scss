@@ -1,0 +1,13 @@
+@use "../shared/mixins" as *;
+@use "../shared/variables" as *;
+
+.cardHeading {
+  font-family: $logo-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1.115;
+  color: $page-heading-text;
+
+  margin-bottom: 39px;
+}

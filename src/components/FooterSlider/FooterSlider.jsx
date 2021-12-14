@@ -27,22 +27,22 @@ export default class FooterSlider extends Component {
           <FooterHeader text={'Featured links'} />
           <ul>
             <li>
-              <Link><FooterParagraph text={'Pricing'}/></Link>
+              <Link to='/'><FooterParagraph text={'Pricing'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Contact'}/></Link>
+              <Link to='/'><FooterParagraph text={'Contact'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'DMCA'}/></Link>
+              <Link to='/'><FooterParagraph text={'DMCA'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Refund Policy'}/></Link>
+              <Link to='/'><FooterParagraph text={'Refund Policy'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Privacy Policy'}/></Link>
+              <Link to='/'><FooterParagraph text={'Privacy Policy'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Terms of Service'}/></Link>
+              <Link to='/'><FooterParagraph text={'Terms of Service'}/></Link>
             </li>
           </ul>
         </div>
@@ -50,22 +50,22 @@ export default class FooterSlider extends Component {
           <FooterHeader text={'Contact us'} />
           <ul>
             <li>
-              <Link><FooterParagraph text={'Our office'}/></Link>
+              <Link to='/'><FooterParagraph text={'Our office'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Digitalgoals LTD'}/></Link>
+              <Link to='/'><FooterParagraph text={'Digitalgoals LTD'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Lapathou, 6, Stravalos 20257'}/></Link>
+              <Link to='/'><FooterParagraph text={'Lapathou, 6, Stravalos 20257'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Lefkosia, Cyprus'}/></Link>
+              <Link to='/'><FooterParagraph text={'Lefkosia, Cyprus'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Phone: +37 06 225 29 36'}/></Link>
+              <Link to='/'><FooterParagraph text={'Phone: +37 06 225 29 36'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Email: mail@example.com'}/></Link>
+              <Link to='/'><FooterParagraph text={'Email: mail@example.com'}/></Link>
             </li>
           </ul>
             </div>

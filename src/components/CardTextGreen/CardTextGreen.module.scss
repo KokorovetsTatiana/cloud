@@ -1,0 +1,13 @@
+@use "../shared/mixins" as *;
+@use "../shared/variables" as *;
+
+.cardTextGreen {
+  font-family: $logo-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1;
+  color: $green-text;
+
+  margin-bottom: 13px;
+}
