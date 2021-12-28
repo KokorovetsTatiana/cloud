@@ -50,22 +50,22 @@ export default class Footer extends Component {
           <FooterHeader text={'Contact us'} />
           <ul>
             <li>
-              <Link><FooterParagraph text={'Our office'}/></Link>
+              <FooterParagraph text={'Our office'}/>
             </li>
             <li>
-              <Link><FooterParagraph text={'Digitalgoals LTD'}/></Link>
+              <FooterParagraph text={'Digitalgoals LTD'}/>
             </li>
             <li>
-              <Link><FooterParagraph text={'Lapathou, 6, Stravalos 20257'}/></Link>
+              <FooterParagraph text={'Lapathou, 6, Stravalos 20257'}/>
             </li>
             <li>
-              <Link><FooterParagraph text={'Lefkosia, Cyprus'}/></Link>
+              <FooterParagraph text={'Lefkosia, Cyprus'}/>
             </li>
             <li>
-              <Link><FooterParagraph text={'Phone: +37 06 225 29 36'}/></Link>
+              <FooterParagraph text={'Phone: +37 06 225 29 36'}/>
             </li>
             <li>
-              <Link><FooterParagraph text={'Email: mail@example.com'}/></Link>
+              <FooterParagraph text={'Email: mail@example.com'}/>
             </li>
           </ul>
         </li>

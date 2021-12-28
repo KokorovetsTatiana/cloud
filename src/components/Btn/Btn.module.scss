@@ -1,0 +1,24 @@
+@use "../../../src/components/shared/mixins" as *;
+@use "../../../src/components/shared/variables" as *;
+
+.button {
+  width: 258px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  border-radius: 62px;
+  background: linear-gradient(
+    90deg,
+    $main-btn-bg-start 0%,
+    $main-btn-bg-end 100%
+  );
+
+  color: $white-color;
+  font-family: $logo-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.115;
+  text-align: center;
+}

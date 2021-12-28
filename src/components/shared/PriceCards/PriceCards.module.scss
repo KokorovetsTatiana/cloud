@@ -1,0 +1,57 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.membership {
+  background-color: rgba(228, 190, 245, 0.5);
+
+  @include for-desktop {
+    background-color: transparent;
+  }
+}
+.cardsSliderCont {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-bottom: $white-color solid 2px;
+  margin-bottom: 17px;
+
+  @include for-desktop {
+    margin-bottom: 47px;
+  }
+}
+
+.cardCont {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.firstCard {
+  background: url(../../../assets/bg-left-card.svg) no-repeat;
+}
+
+.secondCard {
+  background: url(../../../assets/bg-central-card.svg) no-repeat;
+}
+
+.thirdCard {
+  background: url(../../../assets/bg-right-card.svg) no-repeat;
+}
+
+.card {
+  flex-basis: 30%;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 20px;
+}
+
+.card:not(:last-child) {
+  margin-right: 15px;
+}
+
+.card:hover,
+.card:focus {
+  transform: scale(1.05);
+  box-shadow: 5px 3px 4px 2px $btn-grey;
+}

@@ -1,5 +1,5 @@
-@use "../mixins" as *;
-@use "../variables" as *;
+@use "../../components/shared/mixins" as *;
+@use "../../components/shared/variables" as *;
 
 .secHeadingULText {
   font-family: $secondary-font;
@@ -10,4 +10,5 @@
   color: $grey-text;
 
   margin-bottom: 23px;
+  text-align: center;
 }

@@ -1,5 +1,5 @@
-@use "../mixins" as *;
-@use "../variables" as *;
+@use "../../components/shared/mixins" as *;
+@use "../../components/shared/variables" as *;
 
 .secHeading {
   margin-bottom: 23px;
@@ -11,4 +11,5 @@
   line-height: 1.17;
   letter-spacing: 28.5;
   color: $page-heading-text;
+  text-align: center;
 }

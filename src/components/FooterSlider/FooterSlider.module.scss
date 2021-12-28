@@ -1,31 +1,6 @@
 @use "../shared/mixins" as *;
 @use "../shared/variables" as *;
 
-.footer {
-  text-align: center;
-  background-image: url(../../assets/footer-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 43px;
-  padding-top: 150px;
-
-  @include for-tablet {
-    background-image: url(../../assets/footer-main-pic.svg);
-  }
-}
-
-.footerSliderCont {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-  border-bottom: $white-color solid 2px;
-  margin-bottom: 17px;
-
-  @include for-desktop {
-    margin-bottom: 47px;
-  }
-}
-
 .footerSlick {
   padding-top: 150px;
 
