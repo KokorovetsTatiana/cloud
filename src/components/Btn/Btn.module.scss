@@ -2,7 +2,7 @@
 @use "../../../src/components/shared/variables" as *;
 
 .button {
-  width: 258px;
+  width: 178px;
   height: 80px;
   display: block;
   margin: 0 auto;
@@ -21,4 +21,8 @@
   font-size: 24px;
   line-height: 1.115;
   text-align: center;
+
+  @include for-tablet {
+    width: 258px;
+  }
 }
