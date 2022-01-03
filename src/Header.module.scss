@@ -9,9 +9,14 @@ a {
 .mainContainer {
   // background-color: blue; // delete later
   font-family: $logo-font;
-  // background-image: url(../src/assets/bg-header-desktop.svg);
+  background: url("../src/assets/bg-header-mobile.svg") no-repeat top;
+  background-size: cover;
   padding-top: 63px;
-  background-color: transparent;
+  // background-color: transparent;
+
+  @include for-tablet {
+    background: url("../src/assets/bg-header-desktop.svg") no-repeat top;
+  }
 }
 
 .navbar {

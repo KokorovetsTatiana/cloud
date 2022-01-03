@@ -1,0 +1,25 @@
+@use "../../components/shared/mixins" as *;
+@use "../../components/shared/variables" as *;
+
+.advHeading {
+  margin-bottom: 18px;
+  margin-top: 0;
+
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 1.41;
+  color: black;
+  text-align: left;
+  text-transform: uppercase;
+
+  @include for-tablet {
+    color: $page-heading-text;
+    font-size: 36px;
+    line-height: 1.01;
+    font-size: 28px;
+
+    margin-bottom: 28px;
+  }
+}

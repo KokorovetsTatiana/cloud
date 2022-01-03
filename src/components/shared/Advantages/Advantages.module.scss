@@ -1,0 +1,84 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.advantages {
+  background-image: url("../../../assets/comp-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 200px;
+
+  @include for-tablet {
+    background-image: none;
+    display: flex;
+  }
+}
+
+.advPict {
+  background-image: none;
+
+  @include for-tablet {
+    background: url("../../../assets/cloud.svg") no-repeat center,
+      url("../../../assets/comp.svg") no-repeat center;
+    background-size: contain;
+    width: 50%;
+    vertical-align: middle;
+  }
+}
+
+.advList {
+  padding-left: 5px;
+
+  @include for-tablet {
+    width: 50%;
+    padding-left: 90px;
+  }
+}
+
+.advListItem {
+  position: relative;
+}
+
+.firstItem {
+  @include for-tablet {
+    position: absolute;
+    left: -100px;
+    width: 80px;
+    height: 80px;
+    background: url("../../../assets/icon-save-and-secure.svg") no-repeat center,
+      url("../../../assets/icon-bg.svg") no-repeat center;
+  }
+}
+
+.secondItem {
+  @include for-tablet {
+    position: absolute;
+    left: -100px;
+    width: 80px;
+    height: 80px;
+    background: url("../../../assets/icon-access-from.svg") no-repeat center,
+      url("../../../assets/icon-bg.svg") no-repeat center;
+  }
+}
+
+.thirdItem {
+  @include for-tablet {
+    position: absolute;
+    left: -100px;
+    width: 80px;
+    height: 80px;
+    background: url("../../../assets/icon-store-and.svg") no-repeat center,
+      url("../../../assets/icon-bg.svg") no-repeat center;
+  }
+}
+
+.fourthItem {
+  @include for-tablet {
+    position: absolute;
+    left: -100px;
+    width: 80px;
+    height: 80px;
+    background: url("../../../assets/icon-any-point.svg") no-repeat center,
+      url("../../../assets/icon-bg.svg") no-repeat center;
+  }
+}

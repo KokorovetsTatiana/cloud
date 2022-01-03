@@ -17,12 +17,12 @@ function App() {
   return (
     <div className={styles.mainContainer}>
       <Navbar className={styles.navbar}>
-         <Navbar.Brand className={styles.navbarBrand} href="/home">
+         <Navbar.Brand className={styles.navbarBrand} href="/">
            SKYBOX
          </Navbar.Brand>
          <Navbar.Collapse className={styles.navbarPages}>
           <Nav className={styles.navbarLinks}>
-            <Nav.Link className={styles.navItem} href="/home">
+            <Nav.Link className={styles.navItem} href="/">
                Home
              </Nav.Link>
              <Nav.Link className={styles.navItem} href="/price">
@@ -46,7 +46,7 @@ function App() {
       <Suspense fallback={<Loader />}>
         <Router>
           <Switch>
-            <Route exact path="/home" component={HomePage} />
+            <Route exact path="/" component={HomePage} />
             <Route exact path="/price" component={PricingPage} />
             <Route exact path="/contacts" component={ContactsPage} />
             <Route exact path="/faq" component={FAQPage} />
