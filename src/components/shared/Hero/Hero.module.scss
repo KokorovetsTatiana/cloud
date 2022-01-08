@@ -1,2 +1,31 @@
 @use "../../shared/mixins" as *;
 @use "../../shared/variables" as *;
+
+.heroPict {
+  background: url("../../../assets/hero-comp.svg") no-repeat center;
+  height: 406px;
+  background-size: contain;
+
+  @include for-desktop {
+    height: 750px;
+    width: 50%;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+  }
+}
+
+.heroInfo {
+  @include for-desktop {
+    width: 50%;
+  }
+}
+
+.hero {
+  @include for-desktop {
+    display: flex;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

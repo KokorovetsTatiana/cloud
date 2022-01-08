@@ -18,11 +18,12 @@
   font-family: $logo-font;
   font-weight: 700;
   font-style: normal;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.115;
   text-align: center;
 
   @include for-tablet {
     width: 258px;
+    font-size: 24px;
   }
 }

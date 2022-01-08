@@ -1,19 +1,5 @@
-<svg width="390" height="987" viewBox="0 0 390 987" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M277.5 356.5C152 14 -495.5 237 -547.5 -70H1420V821.5C1342 752 1178.55 677.583 849 802.5C535 921.524 366.113 598.331 277.5 356.5Z" fill="url(#paint0_linear_225_170)"/>
-<path d="M174 321C39.5 73 -156 117 -225 -68H1420V625.5C1228.5 625.5 1220.5 752 851.5 735.5C589.467 723.783 328.789 606.411 174 321Z" fill="url(#paint1_linear_225_170)" fill-opacity="0.59"/>
-<path d="M440.5 278C239 250.5 67.0001 118 67 -70H1420V416C1228.5 416 1096.5 794.5 887 673.5C714 573.581 743.405 319.339 440.5 278Z" fill="url(#paint2_linear_225_170)"/>
-<defs>
-<linearGradient id="paint0_linear_225_170" x1="476.937" y1="-70" x2="476.937" y2="827.985" gradientUnits="userSpaceOnUse">
-<stop stop-color="#9039FF"/>
-<stop offset="1" stop-color="#39B8FF"/>
-</linearGradient>
-<linearGradient id="paint1_linear_225_170" x1="478" y1="-289.5" x2="918.5" y2="584.5" gradientUnits="userSpaceOnUse">
-<stop offset="0.354167" stop-color="#8DFFFF"/>
-<stop offset="1" stop-color="#304CE1"/>
-</linearGradient>
-<linearGradient id="paint2_linear_225_170" x1="701" y1="-106" x2="1057" y2="538.5" gradientUnits="userSpaceOnUse">
-<stop stop-color="#9584FF"/>
-<stop offset="1" stop-color="#B556FF"/>
-</linearGradient>
-</defs>
+<svg width="390" height="353" viewBox="0 0 390 353" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M741.436 205.999C936.866 110.56 1039.37 297.411 970.84 64.7144L947.409 -408.292L-236.745 -347.081L-273.001 221.557C-121.847 299.332 0.612632 112.779 210.83 165.582C408.07 215.126 507.982 320.008 741.436 205.999Z" fill="#CCF6FE"/>
+<path d="M728.038 207.645C927.94 122.417 1021.07 314.32 964.138 78.3835L964.138 -395.228L-221.531 -395.228L-285.872 170.812C-138.759 256.292 -7.22672 76.2985 200.11 139.887C394.647 199.55 489.242 309.456 728.038 207.645Z" fill="#A270FF"/>
+<path d="M934.396 268.94C1145.24 218.208 1206.43 423.072 1187.99 180.805L1263.71 -286.447L93.9636 -484.265L-60.0118 63.4405C71.4592 172.316 230.003 16.6851 424.389 114.012C606.775 205.33 682.528 329.543 934.396 268.94Z" fill="#437FEC" fill-opacity="0.33"/>
 </svg>

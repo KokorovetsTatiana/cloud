@@ -6,10 +6,15 @@
 
   font-family: $main-font;
   font-weight: 300;
-  font-size: 72px;
+  font-size: 24px;
   font-style: normal;
   line-height: 1.17;
   letter-spacing: 28.5;
   color: $page-heading-text;
   text-align: center;
+  text-transform: uppercase;
+
+  @include for-tablet {
+    font-size: 72px;
+  }
 }

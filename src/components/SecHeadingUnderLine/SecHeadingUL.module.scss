@@ -2,13 +2,19 @@
 @use "../../components/shared/variables" as *;
 
 .secHeadingULText {
+  margin: 0 auto;
   font-family: $secondary-font;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
   line-height: 1.219;
   color: $grey-text;
 
   margin-bottom: 23px;
   text-align: center;
+
+  @include for-tablet {
+    font-size: 30px;
+  }
 }

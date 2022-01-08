@@ -7,15 +7,16 @@ a {
 }
 
 .mainContainer {
-  // background-color: blue; // delete later
+  max-width: 1600px;
+  padding-top: 10px;
+  margin: 0 auto;
   font-family: $logo-font;
   background: url("../src/assets/bg-header-mobile.svg") no-repeat top;
-  background-size: cover;
-  padding-top: 63px;
-  // background-color: transparent;
+  background-size: contain;
 
   @include for-tablet {
     background: url("../src/assets/bg-header-desktop.svg") no-repeat top;
+    padding-top: 63px;
   }
 }
 
@@ -47,7 +48,7 @@ a {
 }
 
 .navbarPages {
-  display: none;
+  display: block;
 
   @include for-tablet {
     display: flex;
@@ -57,7 +58,16 @@ a {
 
 .navbarLinks {
   display: flex;
-  margin-right: 30px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 30px;
+
+  @include for-tablet {
+    flex-wrap: nowrap;
+    margin-left: 0;
+    flex-direction: row;
+    margin-right: 15px;
+  }
 
   @include for-desktop {
     margin-right: 116px;
@@ -69,6 +79,7 @@ a {
   font-weight: 400;
   font-style: normal;
   line-height: 1.12;
+  margin-bottom: 20px;
 
   @include for-desktop {
     font-size: 20px;
@@ -86,15 +97,19 @@ a {
 
 .navbarButtons {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navItemBtn {
   display: flex;
-  width: 102px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 82px;
   height: 36px;
   border-radius: 25px;
   justify-content: center;
   align-items: center;
+  margin-left: 30px;
 
   background-color: $white-color;
   color: $violet-text;
@@ -102,11 +117,14 @@ a {
   font-size: 14px;
   font-style: normal;
   line-height: 1.19;
+  margin-bottom: 10px;
 
   transition-timing-function: $timing;
   transition-duration: $duration;
 
-  @include for-desktop {
+  @include for-tablet {
+    width: 102px;
+    margin-left: 0px;
     width: 132px;
   }
 }
