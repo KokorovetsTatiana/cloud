@@ -23,7 +23,7 @@ function App() {
             <Nav.Link className={styles.navItem} href="/">
                Home
              </Nav.Link>
-             <Nav.Link className={styles.navItem} href="cloud-react-markup/price">
+             <Nav.Link className={styles.navItem} href="/price">
                Pricing
              </Nav.Link>
              <Nav.Link className={styles.navItem} href="/contacts">
