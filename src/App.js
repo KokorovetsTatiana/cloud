@@ -15,26 +15,26 @@ function App() {
   return (
     <div className={styles.mainContainer}>
       <Navbar className={styles.navbar}>
-         <Navbar.Brand className={styles.navbarBrand} href="practical-blackwell-4aac6f/">
+         <Navbar.Brand className={styles.navbarBrand} href="/">
            SKYBOX
          </Navbar.Brand>
          <Navbar.Collapse className={styles.navbarPages}>
           <Nav className={styles.navbarLinks}>
-            <Nav.Link className={styles.navItem} href="practical-blackwell-4aac6f/">
+            <Nav.Link className={styles.navItem} href="/">
                Home
              </Nav.Link>
-             <Nav.Link className={styles.navItem} href="practical-blackwell-4aac6f/price">
+             <Nav.Link className={styles.navItem} href="/price">
                Pricing
              </Nav.Link>
-             <Nav.Link className={styles.navItem} href="practical-blackwell-4aac6f/contacts">
+             <Nav.Link className={styles.navItem} href="/contacts">
                Contacts
              </Nav.Link>
           </Nav>
           <Nav className={styles.navbarButtons}>
-            <Nav.Link className={styles.navItemBtn} href="practical-blackwell-4aac6f/login">
+            <Nav.Link className={styles.navItemBtn} href="/login">
                LOGIN
              </Nav.Link>
-             <Nav.Link className={styles.navItemBtn} href="practical-blackwell-4aac6f/signup">
+             <Nav.Link className={styles.navItemBtn} href="/signup">
                SIGN UP
              </Nav.Link>
           </Nav>
@@ -44,12 +44,12 @@ function App() {
       <Suspense fallback={<Loader />}>
         <Router>
           <Switch>
-            <Route exact path="practical-blackwell-4aac6f/" component={HomePage} />
-            <Route exact path="practical-blackwell-4aac6f/price" component={PricingPage} />
-            <Route exact path="practical-blackwell-4aac6f/contacts" component={ContactsPage} />
-            <Route exact path="practical-blackwell-4aac6f/login" component={LoginPage} />
-            <Route exact path="practical-blackwell-4aac6f/signup" component={SignUpPage} />
-            <Route exact path="practical-blackwell-4aac6f/notfound" component={NotFoundPage} />
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/price" component={PricingPage} />
+            <Route exact path="/contacts" component={ContactsPage} />
+            <Route exact path="/login" component={LoginPage} />
+            <Route exact path="/signup" component={SignUpPage} />
+            <Route exact path="/notfound" component={NotFoundPage} />
           </Switch>
         </Router>
       </Suspense>
