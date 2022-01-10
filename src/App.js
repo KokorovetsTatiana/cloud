@@ -23,7 +23,7 @@ function App() {
             <Nav.Link className={styles.navItem} href="/">
                Home
              </Nav.Link>
-             <Nav.Link className={styles.navItem} href="/price">
+             <Nav.Link className={styles.navItem} href="cloud-react-markup/price">
                Pricing
              </Nav.Link>
              <Nav.Link className={styles.navItem} href="/contacts">
@@ -45,7 +45,7 @@ function App() {
         <Router>
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="/price" component={PricingPage} />
+            <Route exact path="cloud-react-markup/price" component={PricingPage} />
             <Route exact path="/contacts" component={ContactsPage} />
             <Route exact path="/login" component={LoginPage} />
             <Route exact path="/signup" component={SignUpPage} />
