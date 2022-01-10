@@ -1,0 +1,11 @@
+@use "../../components/shared/mixins" as *;
+@use "../../components/shared/variables" as *;
+
+.container {
+  padding-top: 20px;
+  justify-content: center;
+
+  @include for-tablet {
+    padding-top: 170px;
+  }
+}

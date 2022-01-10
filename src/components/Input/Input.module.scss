@@ -1,0 +1,53 @@
+@use "../shared/mixins" as *;
+@use "../shared/variables" as *;
+
+.inputCont {
+  font-family: $logo-font;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.115;
+  color: $input-text;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  @include for-tablet {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.label {
+  @include for-tablet {
+    margin-right: 45px;
+  }
+}
+
+.alias {
+  background-color: $input-bg-color;
+  border-radius: 61px;
+  border: none;
+  height: 100px;
+  width: 90%;
+
+  font-family: $logo-font;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.115;
+  color: $input-placeholder-text;
+  text-align: left;
+  padding-left: 57px;
+
+  @include for-tablet {
+    width: 630px;
+  }
+}
