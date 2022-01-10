@@ -7,7 +7,7 @@ const Input = ({
     return (
         <p className={styles.inputCont}>
             <label className={styles.label}>{name}</label>
-            <input type="text" value={text} className={styles.alias} />
+            <input type="text" placeholder={text} className={styles.alias} />
         </p>
     )
 }

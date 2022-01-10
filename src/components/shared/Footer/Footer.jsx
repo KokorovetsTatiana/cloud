@@ -27,22 +27,22 @@ export default class Footer extends Component {
           <FooterHeader text={'Featured links'} />
           <ul>
             <li>
-              <Link><FooterParagraph text={'Pricing'}/></Link>
+              <Link to="/#"><FooterParagraph text={'Pricing'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Contact'}/></Link>
+              <Link to="/#"><FooterParagraph text={'Contact'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'DMCA'}/></Link>
+              <Link to="/#"><FooterParagraph text={'DMCA'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Refund Policy'}/></Link>
+              <Link to="/#"><FooterParagraph text={'Refund Policy'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Privacy Policy'}/></Link>
+              <Link to="/#"><FooterParagraph text={'Privacy Policy'}/></Link>
             </li>
             <li>
-              <Link><FooterParagraph text={'Terms of Service'}/></Link>
+              <Link to="/#"><FooterParagraph text={'Terms of Service'}/></Link>
             </li>
           </ul>
         </li>
