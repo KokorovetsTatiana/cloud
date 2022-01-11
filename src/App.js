@@ -45,7 +45,7 @@ function App() {
         <Router>
           <Switch>
             <Route exact path="/" component={HomePage} />
-            <Route exact path="cloud-react-markup/price" component={PricingPage} />
+            <Route exact path="/price" component={PricingPage} />
             <Route exact path="/contacts" component={ContactsPage} />
             <Route exact path="/login" component={LoginPage} />
             <Route exact path="/signup" component={SignUpPage} />
